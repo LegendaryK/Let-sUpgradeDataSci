@@ -1,0 +1,29 @@
+Question 1)
+Ans:   B: RAINBOW
+
+Question 2)
+Ans:   print("LETS UPGRADE")
+
+Question 3)
+Ans: 
+cost = int(input())
+sell = int(input())
+
+if cost > sell:
+    print("Loss")
+elif cost == sell:
+    print("Neither")
+elif sell > cost:
+    print("Profit")
+    
+Question 4)
+Ans:
+
+euro = int(input())
+rs = euro*80
+
+print(rs)
+
+#Day1 Assignment Completed
+
+
