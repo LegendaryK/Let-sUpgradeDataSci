@@ -1,0 +1,172 @@
+Question 1)
+Ans:
+
+lis = []
+for i in range(0, 11):
+  num = int(input())
+  if num % 2 == 0:
+    lis.append(num)
+    
+Question 2)
+Ans:
+
+List Comprehension:
+There are 2 main things while working with Python Lista.
+They are:  Index and Methods
+
+A python list is mutable that is we can change of modify it.
+We can access it's individual elements by index.
+
+The first element is of index 0, the second of index 1, the third of index 2 and so on...
+for example:
+lis = [1,2,3,4]
+Here, the element at index 0 is 1
+The element at index 1 is 2...
+
+We can access it's element using index in this way:
+
+list_name[index_number]
+
+This is the element!
+
+Next we can also change it's elements at the certin index!
+
+For example:
+list_name[index_number] = the_new_number
+
+
+Next we will discuss about list methods!
+
+Here are a few important list methods:
+
+
+append()
+clear()
+copy()
+count()
+extend()
+index()
+insert()
+pop()
+remove()
+reverse()
+sort()
+
+
+We can apply these methods on a list by using this statement:
+
+list_name.method_name(values[if_any])
+
+
+This was a short intro to ist omprehension...
+
+
+
+Question 3)
+Ans:
+
+n= int(input())
+
+dic = {}
+for i in range(0, n+1, 1):
+  dic[i] = i * i
+  
+print(dic)
+
+
+
+Question 4)
+Ans:
+
+
+import math
+d = int(input())
+if d == 1:
+  dir = int(input("UP"))
+  print(round(dir))
+  
+if d == 2:
+  one = int(input("UP"))
+  two = int(input("Down"))
+  
+  if one > two:
+    print(round(one - two))
+  if two > one:
+    print(round(two - one))
+  else:
+    print(0)
+    
+if d == 3:
+  one = int(input("UP"))
+  two = int(input("Down"))
+  three = int(input("LEFT"))
+  
+  if one > two:
+    i = one - two
+  if two > one:
+    i = two = one
+  if one == two:
+    i = 0
+    
+  u = i*i
+  l = three * three
+  if i == 0:
+    print(round(three))
+  else:
+    print(round(math.sqrt(u + l)))
+  
+  if d == 4:
+    one = int(input("UP"))
+    two = int(input("Down"))
+    three = int(input("LEFT"))
+    four = int(input("RIGHT"))
+    
+    if one > two:
+      i = one - two
+    if two > one:
+      i = two - one
+    if one == two:
+      i = 0
+      
+    if three > four:
+      u = three - four
+    if four > three:
+      u = four - three
+    if three == four:
+      u = 0
+      
+if i == 0:
+  if three > four:
+      u = three - four
+    if four > three:
+      u = four - three
+    if three == four:
+      u = 0
+      
+  print(round(u))
+  
+if u == 0:
+  if one > two:
+    i = one - two
+  if two > one:
+    i = two - one
+  if one == two:
+    i = 0
+      
+  print(round(i))
+  
+if i > u:
+  print(round(math.sqrt((i*i) - (u*u))))
+  
+if u > i:
+  print(round(math.sqrt((u*u) - (i*i))))
+  
+else:
+  print("INVALID")
+  
+  
+  
+      
+      
+      
+  
